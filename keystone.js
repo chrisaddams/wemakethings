@@ -11,7 +11,7 @@ var keystone = require('keystone');
 
 keystone.init({
 
-	'name': 'D29Blog',
+	'name': 'D29Blog-site-test-2',
 	'brand': 'D29Blog',
 	
 	'less': 'public',

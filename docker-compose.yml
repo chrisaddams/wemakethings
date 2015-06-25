@@ -1,16 +1,11 @@
 app:
   build: ./
-#  working_dir: /root/
   ports:
   - "3000:3000"
   links:
   - database
   volumes:
   - /etc/localtime:/etc/localtime:ro
-#   environment:
-#   - MONGO_URI="mongodb://${MONGODB_PORT_27017_TCP_ADDR}:27017"
+  - .:/opt/app/
 database:
   image: mongo:latest
-
-#  ports:
-#  - "27017:27017"
