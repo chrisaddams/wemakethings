@@ -10,4 +10,4 @@ run: $docker-compose up
 
 Your site should now be running using two docker containers and will refresh following changes in development using nodemon
 
---remember that you'll need to update the details in the .env file
+--remember that you'll need to update the details in the .env file and ensure it's excluded from git
