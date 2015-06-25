@@ -1,4 +1,4 @@
-FROM node:0.10-onbuild
+FROM node:0.10
 ADD package.json /tmp/package.json
 RUN cd /tmp && npm install
 
