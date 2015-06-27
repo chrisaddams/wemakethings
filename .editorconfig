@@ -9,6 +9,17 @@ trim_trailing_whitespace = false
 insert_final_newline = true
 indent_style = tab
 
+<<<<<<< HEAD
 [{*.yml,*.json}]
+=======
+[*.js]
+indent_size = 4
+
+[*.json]
+indent_style = space
+indent_size = 2
+
+[*.yml]
+>>>>>>> 47e41f2d6d22fca0645663d395c1bf8b60832929
 indent_style = space
 indent_size = 2

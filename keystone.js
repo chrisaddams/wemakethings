@@ -11,13 +11,8 @@ var keystone = require('keystone');
 
 keystone.init({
 
-<<<<<<< HEAD
 	'name': 'D29Blog-site-test-2',
 	'brand': 'D29Blog',
-=======
-	'name': 'Keystone-Docker-Compose',
-	'brand': 'Keystone-Docker-Compose',
->>>>>>> 4aa98acb6df49e8cbb21b35c40ed140786238fa8
 	
 	'less': 'public',
 	'static': 'public',
