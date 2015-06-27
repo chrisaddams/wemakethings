@@ -5,7 +5,12 @@ app:
   links:
   - database
   volumes:
+<<<<<<< HEAD
   - /etc/localtime:/etc/localtime:ro
   - .:/opt/app/
+=======
+  - /etc/localtime:/etc/localtime:ro #keeps docker container and localhost times in sync
+  - .:/opt/app/ #allows nodemon to watch for changes
+>>>>>>> 4aa98acb6df49e8cbb21b35c40ed140786238fa8
 database:
   image: mongo:latest
