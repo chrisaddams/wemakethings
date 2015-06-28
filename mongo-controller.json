@@ -1,4 +1,5 @@
 {
+  "id": "mongodb",
   "kind":"ReplicationController",
   "apiVersion":"v1",
   "metadata":{
@@ -10,19 +11,19 @@
   "spec":{
     "replicas":1,
     "selector":{
-      "name":"mongo"
+      "name": "db", "role":"mongodb"
     },
     "template":{
       "metadata":{
         "labels":{
-          "name":"mongo"
+          "name":"mongodb"
         }
       },
       "spec":{
         "containers":[
           {
-            "name":"master",
-            "image":"mongo",
+            "name":"mongodb",
+            "image":"mongo:latest",
             "ports":[
               {
                 "containerPort":27017,

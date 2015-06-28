@@ -1,10 +1,11 @@
 {
   "kind":"Service",
   "apiVersion":"v1",
+  "id": "mongodb",
   "metadata":{
-    "name":"mongo",
+    "name":"mongodb",
     "labels":{
-      "name":"mongo"
+      "name":{ "name": "db", "role": "mongodb" }
     }
   },
   "spec":{
@@ -16,7 +17,38 @@
       }
     ],
     "selector":{
-      "name":"mongo"
+      "name": { "name": "db", "role": "mongodb" }
     }
   }
+}
+
+
+
+
+mongodb-controller.json
+
+{
+"id": "mongodb",
+"kind": "ReplicationController",
+"apiVersion": "v1beta1",
+"desiredState": {
+"replicas": 1,
+"replicaSelector": {"name": "spatula", "role": "mongodb"},
+"podTemplate": {
+"desiredState": {
+"manifest": {
+"version": "v1beta1",
+"id": "mongodb",
+"containers": [{
+"name": "mongodb",
+"image": "dockerfile/mongodb",
+"cpu": 100,
+"ports": [{"name": "mongodb-server", "containerPort": 27017}]
+}]
+}
+},
+"labels": { "name": "spatula", "role": "mongodb" }
+}
+},
+"labels": { "name": "spatula", "role": "mongodb" }
 }
