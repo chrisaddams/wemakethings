@@ -22,7 +22,7 @@
         "containers":[
           {
             "name":"keystone",
-            "image":"chrisgornall/d29blog",
+            "image":"chrisgornall/d29blog:latest",
             "ports":[
               {
                 "containerPort":3000,

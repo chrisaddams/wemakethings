@@ -1,35 +1,12 @@
 {
   "name": "d29blog",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
-  "dependencies": {
-    "keystone": "^0.3.11",
-    "async": "^0.9.0",
-    "underscore": "^1.8.0",
-    "dotenv": "^1.1.0",
-    "connect-mongo": "latest"
-  },
-  "devDependencies": {
-    "gulp": "^3.7.0",
-    "gulp-jshint": "^1.9.0",
-    "jshint-stylish": "^0.1.3",
-    "gulp-watch": "^0.6.5"
-  },
-  "engines": {
-    "node": ">=0.10.22",
-    "npm": ">=1.3.14"
-  },
-  "scripts": {
-    "start": "node keystone.js"
-  },
-  "main": "keystone.js",
-  "name": "keystone",
-  "version": "0.3.12",
   "description": "Web Application Framework and Admin GUI / Content Management System built on Express.js and Mongoose",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/keystonejs/keystone.git"
+    "url": "https://github.com/chrisgornall/d29blog.git"
   },
   "dependencies": {
     "async": "~1.2.1",
@@ -54,6 +31,7 @@
     "connect-flash": "~0.1.1",
     "cookie-parser": "~1.3.5",
     "debug": "^2.2.0",
+    "dotenv": "^1.1.0",
     "embedly": "~1.0.4",
     "errorhandler": "^1.4.0",
     "express": "~4.13.0",
@@ -120,8 +98,8 @@
     "pikaday": "global.Pikaday",
     "moment": "global.moment"
   },
-  "author": "Jed Watson",
-  "homepage": "http://keystonejs.com/",
+  "author": "Chris Gornall",
+  "homepage": "http://digital29.com/",
   "license": "MIT",
   "keywords": [
     "express",
@@ -137,10 +115,6 @@
     "forms"
   ],
   "readmeFilename": "README.md",
-  "gitHead": "ef3fd612285315ea8e12f68da4c8d6031e2c7fe7",
-  "bugs": {
-    "url": "https://github.com/keystonejs/keystone/issues"
-  },
   "scripts": {
     "build": "NODE_ENV=production gulp build-packages",
     "build-dev": "gulp build-packages",
