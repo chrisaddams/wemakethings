@@ -21,7 +21,7 @@ keystone.init({
 	'view engine': 'jade',
 	
 	'emails': 'templates/emails',
-	'mongo': 'mongodb://' + (process.env.DATABASE_1_PORT_27017_TCP_ADDR || 'localhost') + ':' + (process.env.DATABASE_1_PORT_27017_TCP_PORT || '27017') + '/blog',
+	'mongo': 'mongodb://' + (process.env.DATABASE_1_PORT_27017_TCP_ADDR) + ':' + (process.env.DATABASE_1_PORT_27017_TCP_PORT || '27017') + '/blog',
 	
 	'auto update': true,
 	'session': true,

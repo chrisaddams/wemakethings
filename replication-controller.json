@@ -2,20 +2,20 @@
   "kind":"ReplicationController",
   "apiVersion":"v1",
   "metadata":{
-    "name":"frontend",
+    "name":"frontend-rolling",
     "labels":{
-      "name":"frontend"
+      "name":"frontend-rolling"
     }
   },
   "spec":{
     "replicas":3,
     "selector":{
-      "name":"frontend"
+      "name":"frontend-rolling"
     },
     "template":{
       "metadata":{
         "labels":{
-          "name":"frontend"
+          "name":"frontend-rolling"
         }
       },
       "spec":{
