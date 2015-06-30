@@ -1,0 +1,45 @@
+block foot
+section#footer-sec
+    .container
+        .row.pad-bottom
+          .col-md-4
+            h4
+              strong Digital29 Ltd
+            p
+              | Digital IT Transformation, Simplifed.
+              | Registered Company:
+              | VAT:
+            //a(href='#') read more
+            // .col-md-4
+            //   h4
+            //     strong SOCIAL LINKS
+            //   p
+            //     a(href='#')
+            //       i.fa.fa-facebook-square.fa-3x
+            //     a(href='#')
+            //       i.fa.fa-twitter-square.fa-3x
+            //     a(href='#')
+            //       i.fa.fa-linkedin-square.fa-3x
+            //      a(href='#')
+            //       i.fa.fa-google-plus-square.fa-3x
+          .col-md-4.navbar-right
+            h4
+              strong OUR LOCATION
+            p
+              | 16 Kitchener Road,
+              br
+              | London
+              br
+              | N2 8AS
+            a.btn.btn-primary(href='/contact') Get intouch!
+        .row
+          .col-md-8
+             p Digital29 2015 - <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>,continously deployed using containers on Google Cloud.
+          .col-md-4.navbar-right
+            if user
+             if user.canAccessKeystone
+               li: a(href='/keystone') Open Keystone
+               li: a(href='/keystone/signout') Sign Out
+             else
+               li: a(href='/keystone/signin') Sign In
+
