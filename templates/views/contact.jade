@@ -22,7 +22,7 @@ block content
 						label Phone
 						input(type='text', name='phone', value=formData.phone, placeholder='(optional)').form-control
 					.form-group(class=validationErrors.enquiryType ? 'has-error' : null)
-						label What are you contacting us about?
+						label Subect
 						select(name='enquiryType').form-control
 							option(value='') (select one)
 							each type in enquiryTypes
@@ -32,3 +32,4 @@ block content
 						textarea(name='message', placeholder='Leave us a message...' rows=4).form-control= formData.message
 					.form-actions
 						button(type='submit').btn.btn-primary Send
+section
