@@ -1,5 +1,5 @@
 {
-  "name": "d29blog",
+  "name": "makingthings",
   "version": "0.0.1",
   "private": true,
   "description": "Web Application Framework and Admin GUI / Content Management System built on Express.js and Mongoose",
@@ -115,7 +115,6 @@
     "website",
     "forms"
   ],
-  "readmeFilename": "README.md",
   "scripts": {
     "build": "NODE_ENV=production gulp build-packages",
     "build-dev": "gulp build-packages",
@@ -130,5 +129,11 @@
   "engines": {
     "node": ">= 0.10.28",
     "npm": ">= 1.4.9"
+  },
+  "bugs": {
+    "url": "https://github.com/chrisgornall/d29blog/issues"
+  },
+  "directories": {
+    "test": "test"
   }
 }
